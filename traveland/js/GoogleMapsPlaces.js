@@ -25,8 +25,8 @@ serviceMemes = new google.maps.places.PlacesService(map);
 serviceMemes.nearbySearch(request, callback);
 
 	for (var i = 0; i < LocationsMemes.length; i++) {
-		if "rating" in result[i] {
-			if "name" in result[i] {
+		if ("rating" in result[i]) {
+			if ("name" in result[i]) {
 				NamesAndRatings.push({name : name[i], rating : rating[i]});
 			}
 		}
