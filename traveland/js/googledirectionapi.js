@@ -10,5 +10,5 @@ xmlrequestTony.onreadystatechange = function() {
         console.log(routeTony);
     }
 };
-xmlhttp.open("GET", URLTony, true);
-xmlhttp.send();
+xmlrequestTony.open("GET", URLTony, true);
+xmlrequestTony.send();
