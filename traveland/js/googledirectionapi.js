@@ -1,13 +1,9 @@
-var xmlrequestTony = new XMLHttpRequest();
-var URLTony = "https://maps.googleapis.com/maps/api/directions/json?origin=Disneyland&destination=Universal+Studios+Hollywood&key=AIzaSyA4ffefqz2hpAaDJECnpiS3EbFLr0hF16g";
-var routeTony;
+var mapTony;
 
-xmlrequestTony.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        console.log("haha");
-        routeTony = JSON.parse(this.responseText);
-        console.log(routeTony);
-    }
-};
-xmlrequestTony.open("GET", URLTony, true);
-xmlrequestTony.send();
+function initMapTony() {
+  console.log("yeet");
+  mapTony = new google.maps.Map(document.getElementById("mapTony"), {
+    center: {lat: 33, lng: 150},
+    zoom: 8
+  });
+}
