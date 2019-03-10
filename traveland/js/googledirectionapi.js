@@ -1,4 +1,3 @@
-
 var xmlrequestTony = new XMLHttpRequest();
 var URLTony = "https://maps.googleapis.com/maps/api/directions/json?origin=Disneyland&destination=Universal+Studios+Hollywood&key=AIzaSyA4ffefqz2hpAaDJECnpiS3EbFLr0hF16g";
 var routeTony;
