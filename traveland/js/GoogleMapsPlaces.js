@@ -2,8 +2,11 @@ var map;
 var service;
 var infowindow;
 
+var LatMidpointMemes, LongMidpointMemes;
+var RadiusMemes;
+
 function initMap() {
-var midpoint = new google.maps.LatLng(-33.867, 151.195);
+var origin = new google.maps.LatLng(Lat, Long);
 
 infowindow = new google.maps.InfoWindow();
 
