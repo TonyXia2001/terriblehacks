@@ -5,6 +5,7 @@ var routeTony;
 
 xmlrequestTony.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
+        console.log("haha");
         routeTony = JSON.parse(this.responseText);
         console.log(routeTony);
     }
