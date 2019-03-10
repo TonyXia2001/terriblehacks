@@ -1,30 +1,21 @@
 var map;
-var service;
-var infowindow;
+var serviceMemes;
 
 var LatMidpointMemes, LongMidpointMemes;
 var RadiusMemes;
 
 function initMap() {
-var origin = new google.maps.LatLng(Lat, Long);
+var originMemes = new google.maps.LatLng(LatMidpointMemes, LongMidpointMemes);
 
-infowindow = new google.maps.InfoWindow();
-
-map = new google.maps.Map(
-	document.getElementById('map'), {center: sydney, zoom: 15});
+serviceMemes = new google.maps.places.PlacesService(map);
 
 var request = {
-  query: 'Museum of Contemporary Art Australia',
-  fields: ['name', 'geometry'],
-};
+	location: originMemes,
+	radius: RadiusMemes,
+	RankBy: 'google.maps.places.RankBy.DISTANCE',
+}
 
-service = new google.maps.places.PlacesService(map);
-
-service.findPlaceFromQuery(request, function(results, status) {
-  if (status === google.maps.places.PlacesServiceStatus.OK) {
-	for (var i = 0; i < results.length; i++) {
-	  createMarker(results[i]);
-	}
+serviceMemes.nearbySearch(request, callback)
 
 	map.setCenter(results[0].geometry.location);
   }
