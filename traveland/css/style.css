@@ -8035,7 +8035,7 @@ h1, h2, h3, h4, h5,
       padding-bottom: 0;
       padding-left: 0; } }
   .ftco-navbar-light .container {
-    width: 1110px;
+    width: auto;
     margin: 0 auto;
     padding: 0; }
     @media (min-width: 992px) {
