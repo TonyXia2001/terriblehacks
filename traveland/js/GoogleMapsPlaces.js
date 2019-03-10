@@ -2,8 +2,8 @@ var map;
 var serviceMemes;
 var LocationsMemes;
 var NamesAndRatings;
-var LatMidpointMemes = 43.4643;
-var LongMidpointMemes = -80.5204;
+var LatMidpointMemes;
+var LongMidpointMemes;
 
 
 function FindPlaces() {
@@ -25,8 +25,8 @@ serviceMemes = new google.maps.places.PlacesService(map);
 serviceMemes.nearbySearch(request, callback);
 
 	for (var i = 0; i < LocationsMemes.length; i++) {
-		if ("rating" in result[i]) {
-			if ("name" in result[i]) {
+		if ("rating" in LocationsMemes[i]) {
+			if ("name" in LocationsMemes[i]) {
 				NamesAndRatings.push({name : name[i], rating : rating[i]});
 			}
 		}
