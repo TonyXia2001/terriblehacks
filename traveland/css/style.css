@@ -8245,7 +8245,7 @@ h1, h2, h3, h4, h5,
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b75ff', endColorstr='#59b7ff', GradientType=1 ); }
   .hero-wrap.hero-wrap-2 .overlay {
     width: 100%;
-    opacity: .3; }
+    opacity: 0; }
 
 .slider-text h1 {
   font-size: 64px;
