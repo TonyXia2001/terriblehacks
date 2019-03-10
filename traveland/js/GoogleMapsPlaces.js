@@ -6,7 +6,7 @@ var LatMidpointMemes = '43.4643';
 var LongMidpointMemes = '80.5204';
 var RadiusMemes = '1000';
 
-function initMap() {
+function FindPlaces() {
 var originMemes = new google.maps.LatLng(LatMidpointMemes, LongMidpointMemes);
 
 serviceMemes = new google.maps.places.PlacesService(map);
