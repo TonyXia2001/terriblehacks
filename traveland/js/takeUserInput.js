@@ -8,4 +8,6 @@ usersub.addEventListener("click", ()=>{
     endLoc: document.getElementById("dest").value
   };
   console.log(tripObj);
+  document.getElementById("mapTony").style.display = "block";
+  mapTony.setZoom(3);
 })
